@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num = 1;
+        var t = "<table border = 1>"; // 테이블 선언. 굵기는 1
+
+        for(var i = 1; i <= 5; i++) {
+            t += "<tr>"; // 테이블 행
+            
+            for(var k = 1; k <= 5; k++) {
+                t += "<td>" + num + "</td>"; // 셀 <td>로 감싸주기
+                num ++;
+            }
+            t += "</tr>"; // 한줄 끝났으면 <tr> 닫기
+        }
+        t += "</table>"; // 테이블 끝났어요
+        
+        console.log(t);
+        document.write(t);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
